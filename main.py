@@ -4,7 +4,7 @@ import math
 from pandas.core.ops import comp_method_OBJECT_ARRAY
 from pandas.core.reshape.melt import ensure_list_vars
 
-# ---------------------------- CONSTANTS ------------------------------- #
+
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -15,7 +15,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 timer = None
-# ---------------------------- TIMER RESET ------------------------------- # 
+ 
 
 def reset_timer():
     window.after_cancel(timer)
@@ -28,7 +28,7 @@ def reset_timer():
 
 
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
+ 
 def start_timer():
     global reps
     reps +=1
@@ -55,7 +55,7 @@ def start_timer():
 
 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+
 def count_down(count):
 
     count_min = math.floor(count/60)
@@ -82,7 +82,7 @@ def count_down(count):
 
 
 
-# ---------------------------- UI SETUP ------------------------------- #
+
 window = Tk()
 window.title("Pomodoro")
 window.config(padx = 100, pady = 50, bg = YELLOW)
